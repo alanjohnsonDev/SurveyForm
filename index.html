@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sports Survey Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1 id="title">Favorite Sports Teams</h1>
+        <p id="description"><i>We appreciate your feedback, if you have any questions email us.</i></p>
+        
+        <form id="survey-form">
+            <div class="form-control">
+                <label for="name" id="label-name">Name</label>
+                <input type="text" id="name" placeholder="Enter name"/>
+
+            <div class="form-control">
+                <label for="age" id="label-age">Age</label>
+                <input type="number" id="age" placeholder="Enter age"/>
+
+            <div class="form-control">
+                <label for="email" id="label-email">Email</label>
+                <input type="email" id="email" placeholder="Enter email"/>
+
+            <div class="form-control">
+                <label for="team" id="label-team">What is your favorite Sports team in Washington?</label>
+                <select name="team" id="team">
+                    <option value="select-one">select one</option>
+                    <option value="commanders">Commanders</option>
+                    <option value="nationals">Nationals</option>
+                    <option value="capitals">Capitals</option>
+                    <option value="wizards">Wizards</option>
+                    <option value="mystics">Mystics</option>
+                </select>
+            </div>
+
+            <div class="form-control">
+                <label>Which of these teams will make the playoffs this year? (Choose one)</label>
+                <label for="playoffs-1"><input type="radio" id="playoffs-1" name="playoffs"/>Commanders</label>
+                <label for="playoffs-2"><input type="radio" id="playoffs-2" name="playoffs"/>Nationals</label>
+                <label for="playoffs-3"><input type="radio" id="playoffs-3" name="playoffs"/>Capitals</label>
+                <label for="playoffs-4"><input type="radio" id="playoffs-4" name="playoffs"/>Wizards</label>
+                <label for="playoffs-5"><input type="radio" id="playoffs-5" name="playoffs"/>Mystics</label>
+            </div>
+            
+            <div class="form-control">
+                <label for="player1" id="label-player1">Who is your favorite player on the Washington Commanders?</label>
+                <select name="player1" id="player1">
+                    <option value="select-one">select one</option>
+                    <option value="chase-young">Chase Young</option>
+                    <option value="terry-mclaurin">Terry McLaurin</option>
+                    <option value="carson-wents">Carson Wents</option>
+                    <option value="antonio-gibson">Antonio Gibson</option>
+                    <option value="jd-mckissic">JD McKissic</option>
+                </select>
+            </div>
+
+            <div class="form-control">
+                <label for="player2" id="label-player2">Who is your favorite player on the Washington Capitals?</label>
+                <select name="player2" id="player2">
+                    <option value="select-one">select one</option>
+                    <option value="alex-ovechkin">Alex Ovechkin</option>
+                    <option value="nick-backstrom">Nick Backstrom</option>
+                    <option value="tj-oshie">T.J. Oshie</option>
+                    <option value="tom-wilson">Tom Wilson</option>
+                    <option value="john-carlson">John Carlson</option>
+                </select>
+            </div>
+
+            <div class="form-control">
+                <label for="comments" id="label-comments">Thank you for taking the survey! Any questions or comments, please leave them below. (Optional)</label>
+                <input type="text" id="comments" placeholder="Any Questions or Comments..."/>
+            </div>
+
+            <div>
+                <a href="submit.html" class="btn">SUBMIT</a>
+            </div>
+        </form>
+    </body>
+</html>
